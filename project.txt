@@ -1,0 +1,32 @@
+website: saucedemo.com
+username: standard-user
+password: secret_sauce
+
+cypress cucumber project along with jenkins CI
+
+jenkins:
+
+1. create a freestyle job "CypressAutomation" or any name >> OK
+2. if a real project, go to source code, enter git repo name
+3. if local project, source code == none
+4. then under general >> select advanced
+5. use custom workspace
+6. enter project directory path
+7. under general --> select 'this project is paramiterized'
+8. select choice parameter --> 
+    Name: Script
+    Choices: test
+             headTest
+             chromeTest
+             recordDashboardTest *
+             greenCardTest *
+9. Save
+10. Main menu --> Build with Parameters:
+11.  Select Script (test, headTest, chromeTest, etc)
+12. Main menu --> Configure:
+13. In Build section: click 'Add build step':
+14. select 'execute shell'
+15. Command: npm run "$Script"
+16. Save the jenkins project
+17. Main menu --> build with parameters --> select Script -->  Click Build .
+           

@@ -1,0 +1,132 @@
+this configuration and setup works
+note everything in this framework and create step by step guide for later use.
+
+proceed and create page object model for the website and create end to end testing and api
+
+create different scenarios for each test as much as possible:
+    - positive
+    - negative
+    - boundry testing
+    - cross browser testing (not applicable using cypress i think)
+    -
+
+Login page scenarios:
+    1. valid login credentials:
+        - test case 1: verify that a user can login with a valid username and password
+    2. invalid login credentials:
+        - test case 2: verify that a user with invalid username and/or password cannot login and receives an appropriate error message
+    3. Login Page UI elements:
+        - test case 3: ensure that all UI elements inside login page are displayed properly and have the expected behavior
+    4. Password masking:
+        - test case 4: confirm that the password is masked while typing the password in the password field.
+    5. Remember me functionality:
+        - test case 5: verify that remember me checkbox function when selected retains user login information across different sessions.
+    
+Product Page List scenarios:
+    1. Product listing:
+        - test case 6: check that all available products are displayed correctly with their names, prices, and images.
+    2. Product sorting:
+        - test case 7: verify that user can sort products by name and process in (ascending/descending) order.
+    3. Product filtering:
+        - test case 8: verify that users can filter products by category or other relevant criteria.
+
+Add to cart functionality scenarios:
+    1. Add product to cart:
+        - test case 9: ensure that users can add products to the cart and cart counts update accordingly.
+    2. Cart icon and counter:
+        - test case 10: verify that cart icon and counter actually matches with the number of product added to the cart.
+
+Cart page test scenarios:
+    1. Cart contents:
+        - test case 11: check that cart displays the correct products with their names, prices, and quantities.
+    2. Remove items from cart:
+        - test case 12: ensure that the users can remove items from the cart and counter updates accordingly.
+
+Checkout process scenarios:
+    1. Proceed to checkout:
+        - test case 13: confirm that user can move from cart page to the checkout page.
+    2. Billing information:
+        - test case 14: verify that users can enter and update billing information correctly. 
+    3. Shipping information:
+        - test case 15: ensure that users can enter and update shipping information corrrectly.
+    4. Payment processing:
+        - test case 16: test the payment process by valid and invalid information to ensure it works as expected.
+    5. Order confirmation:
+        - test case 17: verify that users can receive their order confirmation after completing the checkout process.
+
+General Test scenarios:
+    1. Crosss-browser compatibility:
+        - test case 18: test the website using different internet browsers (chrome, firefox, safari, edge) to ensure its compatibility.
+    2. Mobile responsiveness:
+        - test case 19: verify that the website functions and appears properly in multiple mobile devices
+    3. Error handling:
+        - test case 20: test the website's error handling capability by entering incorrect data and ensure that the appropriate error messages are displayed.
+    4. Security testing:
+        - test case 21: check for security vulnerabilities (sql injections, XSS, data protection).
+    5. Performance testing:
+        - test case 22: test the website's performance by using higher user loads and monitoring response times.
+    6. Logout functionality:
+        - test case 23: verify that the users can log out of their accounts and are redirected to the login page.
+
+1. SQL Injection Testing:
+
+SQL injection is a common security vulnerability where malicious SQL queries are injected into input fields to access or manipulate a database improperly.
+To test for SQL injection in Cypress:
+
+Attempt to enter SQL injection payloads into input fields and verify that the application rejects or sanitizes them properly.
+Verify that the application does not display sensitive database error messages to users.
+
+2. Cross-Site Scripting (XSS) Testing:
+
+XSS is a vulnerability that allows attackers to inject malicious scripts into web pages viewed by other users.
+To test for XSS in Cypress:
+
+Attempt to inject XSS payloads (e.g., <script>alert('XSS')</script>) into input fields, and ensure that the application escapes or sanitizes user input to prevent script execution.
+Verify that the application does not reflect user-input directly onto web pages without proper encoding.
+
+3. Authentication and Authorization Testing:
+
+Test the authentication and authorization mechanisms to ensure that users can only access the parts of the application they are authorized to access.
+In Cypress:
+
+Create test cases for different user roles (e.g., regular user, admin) and verify that each user can access only their allowed resources.
+Attempt to access restricted pages without proper authorization and ensure they are denied access.
+
+4. Session Management Testing:
+
+Test the handling of user sessions and ensure that session-related vulnerabilities (e.g., session fixation, session hijacking) are mitigated.
+In Cypress:
+
+Log in as a user and verify that the session is created and managed correctly.
+Test session expiration and ensure that users are prompted to reauthenticate after the session times out.
+
+5. Input Validation Testing:
+
+Test how the application handles various inputs, including boundary values and malicious input.
+In Cypress:
+
+Send valid inputs to input fields and ensure they are accepted.
+Send invalid or unexpected inputs and verify that the application handles them gracefully without crashing or revealing sensitive information.
+
+6. Data Encryption Testing:
+
+Ensure that sensitive data, such as passwords and payment information, is transmitted securely over HTTPS.
+In Cypress:
+
+Check that the application enforces HTTPS for sensitive transactions.
+Monitor network requests to ensure that sensitive data is not sent over unencrypted connections.
+
+7. Error Handling Testing:
+
+Test how the application handles errors, such as 404 (Not Found) or 500 (Internal Server Error) responses.
+In Cypress:
+
+Send requests to non-existent URLs and verify that the application displays a user-friendly error page.
+Test for error messages that might leak sensitive information.
+
+8. Vulnerability Scanning and Penetration Testing:
+
+Consider using specialized security tools and services to perform automated vulnerability scanning and penetration testing.
+Cypress is primarily a testing framework, so for comprehensive security testing, you may want to integrate it with security-specific tools or services, such as OWASP ZAP, Burp Suite, or specialized security testing libraries like cypress-axe for accessibility testing.
+
+Remember that security testing is an ongoing process, and it's essential to stay updated with security best practices and vulnerabilities to keep your application secure.
