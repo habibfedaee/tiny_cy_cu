@@ -1,0 +1,57 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Testing the Cypress Framework",
+    "line": 1,
+    "id": "testing-the-cypress-framework",
+    "tags": [],
+    "uri": "testing.feature",
+    "elements": [
+      {
+        "id": "testing-the-cypress-framework;open-url",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "open url",
+        "tags": [
+          {
+            "name": "@open_url",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "given task: open a url",
+            "result": {
+              "status": "passed",
+              "duration": 1034000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "when task: none",
+            "result": {
+              "status": "passed",
+              "duration": 549000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "then task: verify the url opened",
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

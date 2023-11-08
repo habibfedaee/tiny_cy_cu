@@ -1,16 +1,19 @@
 import { Given, When, And, Then } from "cypress-cucumber-preprocessor/steps";
-
+import LoginPage from "../PageObjects/loginPage";
 // Standard login------------------------------------------------------------------------------
+
 Given("i enter login page", () => {
   //cy.visit("https://saucedemo.com");
-  cy.visit("/");
+  cy.visit("/", { setTimeout: 30000 });
 });
 
 When("i type login credentials", () => {
   //cy.get("#user-name").type("standard_user");
-  cy.get("#user-name").type(Cypress.env("standard_user"));
+  //cy.get("#user-name").type(Cypress.env("standard_user"));
+  new LoginPage().getUsernameInput().type(Cypress.env("standard_user"));
   //cy.get("#password").type("secret_sauce");
-  cy.get("#password").type(Cypress.env("standard_pass"));
+  //cy.get("#password").type(Cypress.env("standard_pass"));
+  new LoginPage().getPasswordInput().type(Cypress.env("standard_pass"));
 });
 And("i click login button", () => {
   cy.get("#login-button").click();

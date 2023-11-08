@@ -1,0 +1,31 @@
+as of 11/05/23
+
+ - complete the page elements inside page object models
+ - create helper codes to grab elements and return data (e.g. dropdowns, selects, count elements, like names, prices, etc.)
+ - based on the product name, 'add_to_cart' element inside inventory.js should be able to guess which item it should add
+ 
+
+
+
+
+
+
+
+
+ dropdowns:
+  static and dynamic
+
+  static: by value=option1 or text= one
+  cy.get('locator').select('option1').click();
+  // assert if option1 selected
+  cy.get('locator').select('option1').should('have.value', 'option1');
+
+  dynamic: 
+
+  cy.get('locator').type("partialText");
+  cy.get('locator that can grab all listed items').each(($el, index, $list)=>{
+    if($el.text()==='wanted text'){
+        // action to be performed:
+        $el.click();
+    }
+  })

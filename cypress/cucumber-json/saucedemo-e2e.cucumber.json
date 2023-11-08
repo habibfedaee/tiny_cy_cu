@@ -1,0 +1,67 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Login App",
+    "line": 1,
+    "id": "login-app",
+    "tags": [],
+    "uri": "saucedemo-e2e.feature",
+    "elements": [
+      {
+        "id": "login-app;standard-user-login",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "standard user Login",
+        "tags": [
+          {
+            "name": "@Standard_login",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "i enter login page",
+            "result": {
+              "status": "passed",
+              "duration": 1109000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "i type login credentials",
+            "result": {
+              "status": "passed",
+              "duration": 680000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "i click login button",
+            "result": {
+              "status": "passed",
+              "duration": 97000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "i should be in home page",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
