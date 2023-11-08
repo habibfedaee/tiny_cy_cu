@@ -8,7 +8,9 @@
     "headTest": "npm run test -- --headed",
     "chromeTest": "npm run test -- --browser chrome",
     "recordDashboardTest": "npm run test -- --record key keyvalue --reporter mochawesome",
-    "GreenCardTest": "npm run test -- --spec \"cypress/e2e/app_login/*\""
+    "GreenCardTest": "npm run test -- --spec \"cypress/e2e/saucedemo-e2e/*\"",
+    "SauceDemo": " npm run test -- --spec \"cypress/e2e/saucedemo-e2e/*\"",
+    "TestOnly": " npm run test -- --spec \"cypress/e2e/testing/*\""
   },
   "author": "",
   "license": "ISC",
