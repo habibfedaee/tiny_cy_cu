@@ -5,7 +5,7 @@
     "line": 1,
     "id": "testing-the-cypress-framework",
     "tags": [],
-    "uri": "testing.feature",
+    "uri": "demoblaze-full.feature",
     "elements": [
       {
         "id": "testing-the-cypress-framework;open-url",
@@ -27,7 +27,7 @@
             "name": "given task: open a url",
             "result": {
               "status": "passed",
-              "duration": 491000000
+              "duration": 292000000
             }
           },
           {
@@ -37,7 +37,7 @@
             "name": "when task: none",
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 2000000
             }
           },
           {
@@ -47,7 +47,7 @@
             "name": "then task: verify the url opened",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 3000000
             }
           }
         ]

@@ -38,7 +38,8 @@ module.exports = defineConfig({
       });
     },
     specPattern: "cypress/e2e/**/*.feature",
-    baseUrl: "https://saucedemo.com",
+    // baseUrl: "https://saucedemo.com",
+    baseUrl: "https://demoblaze.com",
     //baseUrl: 'https://airport-auth.apps.dr1a1.paasdev.delta.com',
     // baseUrl: 'https://airport-auth-si.delta.com',
   },

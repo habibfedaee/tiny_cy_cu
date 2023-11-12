@@ -1,6 +1,7 @@
-website: saucedemo.com
-username: standard-user
-password: secret_sauce
+// website: saucedemo.com // not working well
+webiste: demoblaze.com 
+username: userhfboy
+password: admin
 
 cypress cucumber project along with jenkins CI
 
