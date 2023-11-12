@@ -9,7 +9,7 @@
     "chromeTest": "npm run test -- --browser chrome",
     "recordDashboardTest": "npm run test -- --record key keyvalue --reporter mochawesome",
     "GreenCardTest": "npm run test -- --spec \"cypress/e2e/saucedemo-e2e/*\"",
-    "SauceDemo": " npm run  --spec \"cypress/e2e/saucedemo-e2e.feature\"",
+    "SauceDemo": " npm run  --spec \"/cypress/e2e/saucedemo-e2e.feature\"",
     "TestOnly": " npm run  --spec \"cypress/e2e/testing.feature\""
   },
   "author": "",
