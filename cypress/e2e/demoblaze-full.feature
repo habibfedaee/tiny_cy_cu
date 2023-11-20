@@ -1,8 +1,18 @@
 Feature: DemoBlaze App Full
 
-@positive_login
-Scenario: positive user Login
-Given i enter login page
+@positive_login @full
+Scenario: positive user Register and Login
+Given i navigate to demoblaze and Register section
 When i type login credentials
 And i click login button
 Then i should be in home page
+
+
+@addItems @full
+# you can added single item each time, then return to home to add more
+# or go to cart for placing order
+Scenario: add two items into cart and check cart if exists
+Given i need to add items into cart
+When i click the item title
+And i click add button
+Then item is added

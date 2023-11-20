@@ -1,20 +1,24 @@
 [
   {
     "keyword": "Feature",
-    "name": "Testing the Cypress Framework",
+    "name": "DemoBlaze App Full",
     "line": 1,
-    "id": "testing-the-cypress-framework",
+    "id": "demoblaze-app-full",
     "tags": [],
     "uri": "demoblaze-full.feature",
     "elements": [
       {
-        "id": "testing-the-cypress-framework;open-url",
+        "id": "demoblaze-app-full;positive-user-register-and-login",
         "keyword": "Scenario",
         "line": 4,
-        "name": "open url",
+        "name": "positive user Register and Login",
         "tags": [
           {
-            "name": "@open_url",
+            "name": "@positive_login",
+            "line": 3
+          },
+          {
+            "name": "@full",
             "line": 3
           }
         ],
@@ -24,30 +28,95 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "given task: open a url",
+            "name": "i navigate to demoblaze and Register section",
             "result": {
               "status": "passed",
-              "duration": 292000000
+              "duration": 409000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 6,
-            "name": "when task: none",
+            "name": "i type login credentials",
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 542000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "i click login button",
+            "result": {
+              "status": "passed",
+              "duration": 76000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 7,
-            "name": "then task: verify the url opened",
+            "line": 8,
+            "name": "i should be in home page",
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 677000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "demoblaze-app-full;add-two-items-into-cart-and-check-cart-if-exists",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "add two items into cart and check cart if exists",
+        "tags": [
+          {
+            "name": "@addItems",
+            "line": 11
+          },
+          {
+            "name": "@full",
+            "line": 11
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "i need to add items into cart",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "i click the item title",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "i click add button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "item is added",
+            "result": {
+              "status": "skipped"
             }
           }
         ]
