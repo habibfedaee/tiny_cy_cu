@@ -2,5 +2,13 @@ as of 11/11/23
 I switched my project to (www.demoblaze.com) in order to be bugg-free and move on quickly. 
 
 tasks: 
-- create page objects and locators for each pages inside (demoblaze.com)
+- create page objects and locators for each pages inside (demoblaze.com) --> 50 percent done
 - update the test
+- create custom commands in /support/commands.js:
+    - login
+    - add to cart
+    - checkout
+    - checkout success
+    - checkout failure
+    - go to home
+    - go to cart
