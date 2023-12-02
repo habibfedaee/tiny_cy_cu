@@ -17,7 +17,7 @@ class CartPage {
 
   // add to cart button:
   getAddToCartButton() {
-    return cy.get("#tbodyid > div.row > div > a");
+    return cy.get(".col-sm-12 > .btn");
   }
 
   // added item title (can be many)

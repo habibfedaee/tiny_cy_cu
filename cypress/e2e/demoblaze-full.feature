@@ -16,3 +16,13 @@ Then i should be in home page
 # When i click the item title
 # And i click add button
 # Then item is added
+
+@addItems
+Scenario: adding single item to cart
+Given add single item to the cart
+When i navigate and login to the demoblaze app 
+And i select item by product title from homepage
+And i click addToCart button
+And i navigate to the cart page
+Then my added item should appear in cart
+

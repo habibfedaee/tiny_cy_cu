@@ -1,8 +1,10 @@
 import { Given, When, And, Then } from "cypress-cucumber-preprocessor/steps";
 import HomePage from "../PageObjects/HomePage";
+import CartPage from "../PageObjects/CartPage";
 
 //create page object
 let homePage = new HomePage();
+let cartPage = new CartPage();
 
 // variables
 let username = "hboy";
@@ -36,4 +38,42 @@ And("i click login button", () => {
 Then("i should be in home page", () => {
   // assert if username appears in top menu
   homePage.getNavWelcomeUser().should("be.visible").contains(username);
+});
+
+// add single item to the cart: ----------------------------------------------------
+let item = "";
+let items = [];
+Given("add single item to the cart", () => {
+  // no action
+  item = "Samsung galaxy s6";
+});
+
+When("i navigate and login to the demoblaze app", () => {
+  // navigate to the url and login your account
+  cy.visit("/");
+  //cy.login(username, password);
+  //homePage.getLoginLoginButton().click();
+});
+
+And("i select item by product title from homepage", () => {
+  // select an item by clicking its title
+  // loop through items to get the desired item
+  cy.contains("Phones").click();
+  cy.contains(item).click();
+  //homePage.getItemTitle().trigger("mouseover").click();
+});
+
+And("i click addToCart button", () => {
+  // add the item to the cart using addToCart button
+  //cartPage.getAddToCartButton().should("be.visible").click();
+  cy.contains("Add to cart").click();
+});
+And("i navigate to the cart page", () => {
+  // navigate to the cart page
+  homePage.getNavCart().click();
+});
+Then("my added item should appear in cart", () => {
+  //  check whether your desired item exists
+
+  cy.contains(".success", item);
 });
