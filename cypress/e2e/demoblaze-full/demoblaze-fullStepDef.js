@@ -77,3 +77,32 @@ Then("my added item should appear in cart", () => {
 
   cy.contains(".success", item);
 });
+
+// adding multiple items to the cart:--------------------------------------
+items = ["Samsung galaxy s6", "Sony xperia z5", "Nexus 6"];
+Given("add multiple items to the cart", () => {
+  // no actions,
+});
+When("i navigate and login to the demoblaze app", () => {
+  // navigate to the website and login
+  cy.visit("/");
+  //cy.login(username, password);
+  //homePage.getLoginLoginButton().click(); // login not ok
+});
+And("i select and add each item to the cart", () => {
+  // select items based on items array
+  for (let index = 0; index < items.length; index++) {
+    const itm = items[index];
+    cy.contains(itm).click();
+    cy.contains("Add to cart").click();
+    cy.contains("Home").click();
+  }
+});
+
+Then("my added items should appear in cart", () => {
+  // assert if success items are equal to items array
+  cy.contains("Cart").click();
+  for (let i = 0; i < 3; i++) {
+    cy.contains(".success", item[i]); // works
+  }
+});

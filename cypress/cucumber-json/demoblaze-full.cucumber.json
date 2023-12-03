@@ -31,7 +31,7 @@
             "name": "i navigate to demoblaze and Register section",
             "result": {
               "status": "passed",
-              "duration": 403000000
+              "duration": 404000000
             }
           },
           {
@@ -41,7 +41,7 @@
             "name": "i type login credentials",
             "result": {
               "status": "passed",
-              "duration": 729000000
+              "duration": 740000000
             }
           },
           {
@@ -51,7 +51,7 @@
             "name": "i click login button",
             "result": {
               "status": "passed",
-              "duration": 92000000
+              "duration": 82000000
             }
           },
           {
@@ -61,7 +61,7 @@
             "name": "i should be in home page",
             "result": {
               "status": "passed",
-              "duration": 525000000
+              "duration": 581000000
             }
           }
         ]
@@ -73,7 +73,11 @@
         "name": "adding single item to cart",
         "tags": [
           {
-            "name": "@addItems",
+            "name": "@addItem",
+            "line": 20
+          },
+          {
+            "name": "@singleItem",
             "line": 20
           }
         ],
@@ -86,7 +90,7 @@
             "name": "add single item to the cart",
             "result": {
               "status": "passed",
-              "duration": 34000000
+              "duration": 31000000
             }
           },
           {
@@ -96,7 +100,7 @@
             "name": "i navigate and login to the demoblaze app",
             "result": {
               "status": "passed",
-              "duration": 79000000
+              "duration": 80000000
             }
           },
           {
@@ -106,7 +110,7 @@
             "name": "i select item by product title from homepage",
             "result": {
               "status": "passed",
-              "duration": 465000000
+              "duration": 439000000
             }
           },
           {
@@ -116,7 +120,7 @@
             "name": "i click addToCart button",
             "result": {
               "status": "passed",
-              "duration": 354000000
+              "duration": 376000000
             }
           },
           {
@@ -126,7 +130,7 @@
             "name": "i navigate to the cart page",
             "result": {
               "status": "passed",
-              "duration": 235000000
+              "duration": 239000000
             }
           },
           {
@@ -136,7 +140,66 @@
             "name": "my added item should appear in cart",
             "result": {
               "status": "passed",
-              "duration": 641000000
+              "duration": 416000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "demoblaze-app-full;adding-multiple-items-to-cart",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "adding multiple items to cart",
+        "tags": [
+          {
+            "name": "@addItems",
+            "line": 29
+          },
+          {
+            "name": "@multipleItems",
+            "line": 29
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 31,
+            "name": "add multiple items to the cart",
+            "result": {
+              "status": "passed",
+              "duration": 32000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "i navigate and login to the demoblaze app",
+            "result": {
+              "status": "passed",
+              "duration": 122000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "i select and add each item to the cart",
+            "result": {
+              "status": "passed",
+              "duration": 2112000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "my added items should appear in cart",
+            "result": {
+              "status": "passed",
+              "duration": 711000000
             }
           }
         ]

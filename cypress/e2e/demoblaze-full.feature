@@ -17,7 +17,7 @@ Then i should be in home page
 # And i click add button
 # Then item is added
 
-@addItems
+@addItem @singleItem
 Scenario: adding single item to cart
 Given add single item to the cart
 When i navigate and login to the demoblaze app 
@@ -26,3 +26,9 @@ And i click addToCart button
 And i navigate to the cart page
 Then my added item should appear in cart
 
+@addItems @multipleItems
+Scenario: adding multiple items to cart
+Given add multiple items to the cart
+When i navigate and login to the demoblaze app 
+And i select and add each item to the cart
+Then my added items should appear in cart
