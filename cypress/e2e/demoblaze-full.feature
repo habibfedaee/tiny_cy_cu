@@ -32,3 +32,14 @@ Given add multiple items to the cart
 When i navigate and login to the demoblaze app 
 And i select and add each item to the cart
 Then my added items should appear in cart
+
+
+@checkOut @singleItem
+Scenario: checkout single item
+Given i have added single item to the cart
+When i navigate and login to the demoblaze app 
+And i select item by product title from homepage
+And i click checkOut button in cartpage
+And i fill the checkout form
+And i click continue button and click finish button
+Then my order should be placed

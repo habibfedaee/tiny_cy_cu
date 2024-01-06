@@ -21,11 +21,6 @@ Given("i navigate to demoblaze and Register section", () => {
 When("i type login credentials", () => {
   // click login button to access login frame
   homePage.getNavLogin().should("be.visible").click();
-
-  // type user credentials:
-  //homePage.getLoginUsernameInput().should("be.visible").type(username);
-  //homePage.getLoginPasswordInput().should("be.visible").type(password);
-
   // login command:
   cy.login(username, password);
 });
@@ -86,7 +81,8 @@ Given("add multiple items to the cart", () => {
 When("i navigate and login to the demoblaze app", () => {
   // navigate to the website and login
   cy.visit("/");
-  //cy.login(username, password);
+  cy.login(username, password);
+  homePage.getLoginLoginButton().should("be.visible").click();
   //homePage.getLoginLoginButton().click(); // login not ok
 });
 And("i select and add each item to the cart", () => {

@@ -31,7 +31,7 @@
             "name": "i navigate to demoblaze and Register section",
             "result": {
               "status": "passed",
-              "duration": 404000000
+              "duration": 1895000000
             }
           },
           {
@@ -41,7 +41,7 @@
             "name": "i type login credentials",
             "result": {
               "status": "passed",
-              "duration": 740000000
+              "duration": 772000000
             }
           },
           {
@@ -51,7 +51,7 @@
             "name": "i click login button",
             "result": {
               "status": "passed",
-              "duration": 82000000
+              "duration": 87000000
             }
           },
           {
@@ -61,7 +61,7 @@
             "name": "i should be in home page",
             "result": {
               "status": "passed",
-              "duration": 581000000
+              "duration": 1611000000
             }
           }
         ]
@@ -90,7 +90,7 @@
             "name": "add single item to the cart",
             "result": {
               "status": "passed",
-              "duration": 31000000
+              "duration": 36000000
             }
           },
           {
@@ -100,7 +100,7 @@
             "name": "i navigate and login to the demoblaze app",
             "result": {
               "status": "passed",
-              "duration": 80000000
+              "duration": 113000000
             }
           },
           {
@@ -110,7 +110,7 @@
             "name": "i select item by product title from homepage",
             "result": {
               "status": "passed",
-              "duration": 439000000
+              "duration": 459000000
             }
           },
           {
@@ -120,7 +120,7 @@
             "name": "i click addToCart button",
             "result": {
               "status": "passed",
-              "duration": 376000000
+              "duration": 389000000
             }
           },
           {
@@ -130,7 +130,7 @@
             "name": "i navigate to the cart page",
             "result": {
               "status": "passed",
-              "duration": 239000000
+              "duration": 249000000
             }
           },
           {
@@ -140,7 +140,7 @@
             "name": "my added item should appear in cart",
             "result": {
               "status": "passed",
-              "duration": 416000000
+              "duration": 507000000
             }
           }
         ]
@@ -169,7 +169,7 @@
             "name": "add multiple items to the cart",
             "result": {
               "status": "passed",
-              "duration": 32000000
+              "duration": 33000000
             }
           },
           {
@@ -179,7 +179,7 @@
             "name": "i navigate and login to the demoblaze app",
             "result": {
               "status": "passed",
-              "duration": 122000000
+              "duration": 71000000
             }
           },
           {
@@ -189,7 +189,7 @@
             "name": "i select and add each item to the cart",
             "result": {
               "status": "passed",
-              "duration": 2112000000
+              "duration": 2567000000
             }
           },
           {
@@ -199,7 +199,7 @@
             "name": "my added items should appear in cart",
             "result": {
               "status": "passed",
-              "duration": 711000000
+              "duration": 912000000
             }
           }
         ]

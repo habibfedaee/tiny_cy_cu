@@ -6,8 +6,8 @@ tasks:
 - update the test
 - create custom commands in /support/commands.js:
     - login                     done    
-    - add to cart               under work
-    - checkout                  pending
+    - add to cart               done
+    - checkout                  in progress
     - checkout success          pending
     - checkout failure          pending
     - go to home                pending
